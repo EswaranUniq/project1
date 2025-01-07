@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+
+#outline{
+    outline: red 5px solid;
+    border: black 5px solid ;
+    width: 500px;
+}
+
+.row{
+    display: flex;
+    margin: 4px 0;
+}
+.col-4{
+    max-height:90vh;
+    margin-right: 4px;
+    width: 20vw;
+    padding: 5px 0 5px 35px;
+    color: white;
+    flex-wrap: wrap;
+    border-right: 2px groove;
+    overflow-y: auto;
+    box-shadow: 0px 3px 4px gray;
+}
+
+.col-4 ol{
+    font-size: larger;
+    gap: 8px;
+    color: rgb(44, 149, 255);
+}
+
+.col-4 ol li:hover{
+    color: rgb(65, 160, 255);
+    text-decoration: underline;
+    cursor: pointer;
+} 
+
+.col-4 ol{
+    display: flex;
+    flex-direction: column;
+}
+
+.col-8{
+    min-height:90vh;
+    border:1px groove gray;
+    border-bottom: none;
+    border-top: none;
+    width: 80vw;
+    padding: 5px;
+    
+}
+
+table,td,th{
+    border: solid 2px black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th{
+    background-color: aqua;
+}
+
+table tbody > :nth-child(even){
+    background-color: blanchedalmond;
+}
+
+table tfoot{
+    background: rgb(144, 249, 144);
+}
+
+table tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background:orange;
+    float:bottom    ;
+}
+
+.col-8 > *{
+    margin: 30px 0;
+}
+
+.freams{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.freams iframe{
+    background: rgb(255, 185, 185);
+    padding: 10px;
+}
+
+.loading-box{
+    background-color: green;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:25px;
+}
+
+.loading{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(209, 209, 209);
+    border-radius:10px;
+    overflow: hidden;
+    border: 3px solid white;
+    position: relative;
+}
+
+.load{
+    background-color: rgb(0, 183, 255);
+    width:0;
+    height:100%;
+    text-align: center;
+    transition: 1s;
+    user-select: none;
+}
+
+/* Header */
+header{
+    margin-top: 20px;
+    position: sticky;
+    top: 6px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    background-color: black;
+    
+}
+
+header ul li{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+header ul li a{
+    border: 2px solid white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+
+header ul li a:hover{
+    background: linear-gradient(to right, aqua, rgb(130, 213, 255));
+    transition:.5s;
+    color: black;
+    border: 2px solid black;    
+}
+
+header ul.dropDown{
+    position: absolute;
+    display: none;
+    background: transparent;
+    width: 100%;
+    animation: dropdown 1.5s;
+}
+
+@keyframes dropdown {
+    0%{
+        transform:translateY(-10px);
+    }
+
+}
+
+header ul.dropDown li{
+    margin: 5px 0;
+    background-color: black;
+}
+
+header ul li:hover ul.dropDown{
+    display: block;
+}
+    

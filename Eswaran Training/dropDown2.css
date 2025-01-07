@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    background-color: black;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+ul li a{
+    border: 2px solid white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: large;
+}
+
+ul li a:hover{
+    background: linear-gradient(to right, aqua, rgb(130, 213, 255));
+    transition:.5s;
+    color: black;
+    border: 2px solid black;    
+}
+
+ul.dropDown{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+    animation: dropdown 1.5s;
+}
+
+@keyframes dropdown {
+    0%{
+        transform:translateY(-10px);
+    }
+
+}
+
+ul.dropDown li{
+    margin: 5px 0;
+    background-color: black;
+}
+
+ul li:hover ul.dropDown{
+    display: block;
+}
