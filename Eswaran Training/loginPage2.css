@@ -9,10 +9,10 @@ body{
     background: linear-gradient(to right,rgb(0, 101, 141),rgb(168, 226, 249));
 }
 
-/* Header Part */
+/* Header Part */   
 
 header{
-    background:rgba(255, 255, 255, 0.635);
+    background:rgba(255, 255, 255, 0.829);
     display: flex;
     justify-content: space-between;
 }
@@ -57,10 +57,11 @@ header ul li a:hover{
     display: none;
     position: absolute;
     width: 100%;
+    z-index: 1;
 }
 
 .dropDown li{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.886);
     margin: 5px 0;
 }
 
@@ -79,7 +80,7 @@ header ul li:hover .dropDown{
 
 .container{
     background:white;
-    min-width: 300px;
+    min-width: 330px;
     padding: 40px 20px;
     text-align: center;
     border-radius: 8px;
@@ -110,9 +111,20 @@ header ul li:hover .dropDown{
     border: 1px solid black;
     cursor: pointer;
     font-weight:800;
+    margin-bottom: 15px;
 }
 
 .form-btn input:hover{
     
     background: linear-gradient(to left, black,black,rgb(252, 252, 252));
+}
+
+.form-btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-btn a:hover{
+    color: rgb(59, 59, 59);
+    text-decoration: underline solid;
 }
