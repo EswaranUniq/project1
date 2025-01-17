@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", serif;
+}
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #282A35,#282A35,#cbfffb,#cbfffb);
+}
+header{
+    position: sticky; 
+    top: 0;
+    z-index: 999;
+}
+
+.nav-bar1{
+    background-color: rgb(21,32,43);
+    color: rgba(255, 255, 255, 0.845);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}  
+
+.nav-bar1 ul{
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar1 ul li{
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 14px;
+    display: block;
+    position: relative;
+}
+
+
+.nav1 li:hover{
+    background-color:  #04AA6D;
+}
+
+
+#search{
+    height: 40px;
+    font-size: large;
+    padding-top:2px;
+    border-radius: 40px;
+    padding-left: 10px;
+    width:160px;
+    outline: none;
+    border: none;
+}
+
+#search::placeholder{
+    font-size: 18px;
+    font-style: italic;
+}
+
+.search{
+    width: fit-content;
+    position: relative;
+    left: 5px;
+}
+
+.search:focus{
+    background-color: #9763f6;
+}
+
+.search i{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+}
+
+#darkmode{
+    margin-left: 20px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.nav2{
+    margin-left: 20px;
+}
+
+.nav2 i{
+    color: #9763f6;
+}
+
+.nav2 li:hover{
+    background-color: rgba(255, 255, 255, 0.156);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.auth{
+    width:200px;
+    height:55px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+.auth a:nth-child(1){
+    text-decoration: none;
+    color: white;
+    background-color: #04AA6D;
+    border-radius: 50px;
+    padding: 15px 30px;
+    position: absolute;
+    z-index: 1;
+}
+
+.auth a:nth-child(1):hover{
+    background-color: #02784c;
+}
+
+.auth a:nth-child(2){
+    text-decoration: none;
+    color: black;
+    background-color: #D9EEE1;
+    border-radius: 50px;
+    padding: 15px 30px 15px 50px;
+    position: absolute;
+    right: 0;
+    text-align: end;
+    z-index: 0;
+}
+
+.auth a:nth-child(2):hover{
+    background-color: #02784c;
+    color: white;
+}
+/* ------------------------------------------ Navbar 2 ---------------------- */
+
+.nav-bar2{
+    background-color: #282A35;
+    width: 100vw;
+    height:70px;
+    color: rgba(255, 255, 255, 0.845);
+    padding:  0 20px;
+    padding-bottom: 10px;
+}
+
+.nav-bar2 ul{
+    height: 100%;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 15px;
+    overflow-x: scroll;
+
+}
+
+.nav-bar2 ul li{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-bar2 ul li:hover{
+    background-color: #191a1f;
+}
+
+/* Sroll Slider */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #02784c; 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #04AA6D; 
+  }
+
+  /* Sroll Slider */
+
+
+  /* ----------------------------Content---------------------------- */
+
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #282A35;
+    height: 70vh;
+    gap: 20px;
+    border-bottom-right-radius: 10%;
+  }
+
+  .about h1{
+    color: white;
+    font-size: 70px;
+  }
+
+  .about h4{
+    color: rgb(255, 255, 163);
+    font-size: 20px;
+  }
+
+  .about .global-search {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about .global-search input{
+    width: 500px;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    padding-left: 25px;
+  }
+
+
+  .about .global-search i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    background-color: #04AA6D;
+    padding: 15px 30px;
+    border-radius:0 40px 40px 0;
+    color: white;
+    cursor: pointer;
+  }
+
+  .about .global-search i:active{
+    background-color: #02784c;
+  }
+
+  .about a{
+    font-size: 25px;
+    color: white;
+  }
+
+  .about a:hover{
+    color: rgb(255, 255, 115);
+  }
+
+  .tutorials .html{
+    border-top-left-radius: 20%;
+    background-color: #282A35;
+  }
+
+  .tutorials div{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tutorials div h1{
+    font-size: 80px;
+}
+.learn-options{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.tutorials div a{
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+    align-content: center;
+}
+
+.tutorials div a:nth-child(even){
+    color: black;
+}
+
+.tutorials>div:nth-child(1){
+    background-color: #cbfffb;
+}
+
+.tutorials>div:nth-child(2){
+    background-color: #fffaa4;
+}
+
+.tutorials>div:nth-child(3){
+    background-color: #191a1f;
+    color: white;
+}
+
+/* ---------------------------------- Footer --------------------------------------- */
+
+footer{
+    background-color: #282A35;
+    width: 100vw;
+    color: white;
+    padding: 50px 100px;
+}
+
+footer .footer-info {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: rgb(255, 255, 130);
+
+}
+
+footer .footer-info li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-detials{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ol{
+    list-style: none;
+}
