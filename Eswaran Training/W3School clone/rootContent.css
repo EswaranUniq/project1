@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+}
+header{
+    position: sticky; 
+    top: 0;
+    z-index: 999;
+}
+
+.nav-bar1{
+    background-color: rgb(21,32,43);
+    color: rgba(255, 255, 255, 0.845);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}  
+
+.nav-bar1 ul{
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar1 ul li{
+    cursor: pointer;
+    padding: 20px 20px;
+    font-size: 14px;
+    display: block;
+    position: relative;
+}
+
+
+.nav1 li:hover{
+    background-color:  #04AA6D;
+}
+
+
+#search{
+    height: 35px;
+    font-size: large;
+    padding-top:2px;
+    padding-right: 35px;
+    border-radius: 40px;
+    padding-left: 10px;
+    width: 160px;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+#search::placeholder{
+    font-size: 18px;
+    font-style: italic;
+}
+
+#search:focus{
+    outline: #04AA6D 3px solid;
+}
+
+.search{
+    width: fit-content;
+    position: relative;
+    left: 5px;
+    border-radius:40px;
+}
+
+.search i{
+    font-size: 15px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    color: black;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search i:hover{
+    background-color:rgb(243, 243, 243);
+}
+#darkmode{
+    margin-left: 35px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.nav2{
+    margin-left: 20px;
+}
+
+.nav2 i{
+    color: #9763f6;
+}
+
+.nav2 li:hover{
+    background-color: rgba(255, 255, 255, 0.156);
+    border-radius: 40px;
+    padding: 15px 20px;
+}
+
+.auth{
+    width:200px;
+    height:55px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+.auth a:nth-child(1){
+    text-decoration: none;
+    color: white;
+    background-color: #04AA6D;
+    border-radius: 50px;
+    padding: 10px 25px;
+    position: absolute;
+    z-index: 1;
+}
+
+.auth a:nth-child(1):hover{
+    background-color: #02784c;
+}
+
+.auth a:nth-child(2){
+    text-decoration: none;
+    color: black;
+    background-color: #D9EEE1;
+    border-radius: 50px;
+    padding: 10px 25px 10px 40px;
+    position: absolute;
+    right:18px;
+    text-align: end;
+    z-index: 0;
+}
+
+.auth a:nth-child(2):hover{
+    background-color: #02784c;
+    color: white;
+}
+/* ------------------------------------------ Navbar 2 ---------------------- */
+
+.nav-bar2{
+    background-color: #282A35;
+    width: 100vw;
+    height:70px;
+    color: rgba(255, 255, 255, 0.845);
+    padding:  0 20px;
+    padding-bottom: 10px;
+}
+
+.nav-bar2 ul{
+    height: 100%;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 15px;
+    overflow-x: scroll;
+
+}
+
+.nav-bar2 ul li{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-bar2 ul li:hover{
+    background-color: #191a1f;
+}
+
+/* Sroll Slider */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #02784c; 
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #04AA6D; 
+  }
+
+  /* Sroll Slider */
+
+  
+/* ---------------------------------- Footer --------------------------------------- */
+
+footer{
+    background-color: #282A35;
+    width: 100vw;
+    color: white;
+    padding: 50px 100px;
+}
+
+footer .footer-info {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: rgb(255, 255, 130);
+
+}
+
+footer .footer-info li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-detials{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ol{
+    list-style: none;
+}
+
+/*------------------------------ Content --------------------------- */
+
+.content{
+    margin: 2px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.col1{
+    width: 20vw;
+    height:80vh;
+    background-color: #232635;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+.col1 ul{
+    font-size: 30px;
+    color: white;
+    list-style: none;
+}
+
+.col2{
+    width: 79vw;
+    height:80vh;
+    overflow-y: scroll;
+    background-color: #282A35;
+}
