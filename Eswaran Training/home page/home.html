@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Website Logo</h1>
+            </div>
+            <ul>
+                <li class="darkmode"><button id="darkmode"><i class="fa-solid fa-moon"></i></button></i></li>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-address-card"></i> About</a>
+                    <ul class="dropDown">
+                        <li style="padding: 10px;text-align:center;">
+                            <p>This is my website, i create to my training purpose</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fa-solid fa-share-nodes"></i> Social <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropDown">
+                        <li><a href=""><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://youtube.com/@not_aname"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fa-solid fa-phone"></i> Contact <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropDown">
+                        <li><a href="">9534567891</a></li>
+                        <li><a href="">8034567892</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <ol>
+                    <li><a href="/login page1/index.html">Login Page 1</a></li>
+                    <li><a href="/login page2/loginPage2.html">Login Page 2</a></li>
+                    <li><a href="/dropdown/dropDown.html">Drop Down</a></li>
+                    <li><a href="/W3School clone/index.html">W3School Clone</a></li>
+                    <li><a href="/card layout/index.html">Card layout</a></li>
+                    <li>Topic 6</li>
+                    <li>Topic 7</li>
+                    <li>Topic 8</li>
+                    <li>Topic 9</li>
+                    <li>Topic 10</li>
+                    <li>Topic 6</li>
+                    <li>Topic 7</li>
+                    <li>Topic 8</li>
+                    <li>Topic 9</li>
+                    <li>Topic 10</li>
+                    <li>Topic 6</li>
+                    <li>Topic 7</li>
+                    <li>Topic 8</li>
+                    <li>Topic 9</li>
+                    <li>Topic 10</li>
+                </ol>
+            </div>
+            <div class="col-8">
+                <table width="100%" height="300">
+                    <!-- Table Caption -->
+                    <caption style="color: red;">Student Grades</caption>
+
+                    <!-- Table Header -->
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Math</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Science</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td>Doom stay</td>
+                            <td>Social</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td>williem Smith</td>
+                            <td>Python</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr>
+                            <td>doctor wium</td>
+                            <td>Accounts</td>
+                            <td>B+</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Table Footer -->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total Students: 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+
+                <!-- loading design -->
+                <div class="loading-box">
+                    <input type="range" id="inp-load" value="0">
+                    <div class="loading">
+
+                        <div class="load" id="load"><b id="load-value"></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script>
+        var inp_load = document.getElementById('inp-load');
+        var load = document.getElementById('load');
+        var load_value = document.getElementById('load-value');
+
+        var default_load = inp_load.value;
+        load.style.width = default_load + "%";
+        load_value.textContent = default_load + "%";
+
+        inp_load.addEventListener('input', (event) => {
+            var load_speed = event.target.value;
+            load.style.width = load_speed + "%";
+            load_value.textContent = load_speed + "%";
+        });
+
+        document.getElementById("darkmode").addEventListener('click', () => {
+            let body = document.getElementById('body');
+            if (body.style.background === "black") {
+                body.style.background = "white";
+            } else {
+                body.style.background = "black";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

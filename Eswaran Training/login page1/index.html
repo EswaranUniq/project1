@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Dotnet Training</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Login</h1>
+        <form id="loginForm" action="" method="post">
+            <div class="form-control">
+                <label for="email">E-mail</label><span> *</span>
+                <input type="email" id="email" name="email" required>
+                <i class="fa fa-envelope"></i>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label><span> *</span>
+                <input type="text" id="password" name="password" required>
+                <i class="fa fa-lock" style="font-size: 20px;"></i>
+            </div>
+            <div class="form-btn">
+                <button type="submit" id="logSubmit">Login</button>
+            </div>
+        </form>
+        <center>
+            <p id="emailFeedBack"></p>
+        </center>
+        <div class="acc-state">
+            <a href="register.html">create account?</a>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
